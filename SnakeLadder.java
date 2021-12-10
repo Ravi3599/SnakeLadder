@@ -20,10 +20,12 @@ a:		while(con == 1){
       System.out.println("Condition: " +con);
       switch (con){
             case NO_PLAY:
+						System.out.println("NO PLAY");
                   System.out.println("New Position is: " + pos);
 						cntr4++;
                   break;
             case LADDER:
+						System.out.println("Got LADDER");
                   pos = pos + roll;
                   if(pos <= 100)
                   System.out.println("New Position is: " + pos);
@@ -34,6 +36,7 @@ a:		while(con == 1){
 						cntr2++;
 						continue a;
             case SNAKE:
+						System.out.println("Got SNAKE");
                   pos = pos - roll;
                   if (pos <= 100){
                   if (pos >= 0 ){
@@ -64,10 +67,12 @@ b:		while(con1 == 1){
       System.out.println("Condition: " +con1);
       switch (con1){
             case NO_PLAY:
+						System.out.println("NO PLAY");
                   System.out.println("New Position is: " + pos1);
                   c4++;
                   break;
             case LADDER:
+						System.out.println("Got LADDER");
                   pos1 = pos1 + roll1;
                   if(pos1 <= 100)
                   System.out.println("New Position is: " + pos1);
@@ -78,6 +83,7 @@ b:		while(con1 == 1){
                   c2++;
 						continue b;
             case SNAKE:
+						System.out.println("Got SNAKE");
                   pos1 = pos1 - roll1;
                   if (pos1 <= 100){
                   if (pos1 >= 0 ){
