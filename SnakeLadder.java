@@ -58,7 +58,7 @@ a:		while(con == 1){
          }
 		}
 		int con1 = 1;
-b:		while(con1 == 1){
+b:		while(con1 == 1 && pos1 < 100){
 		System.out.println("PLAYER 2");
 		int roll1 = (int) (Math.floor(Math.random() * 10) % 6 + 1);
       c1++;
