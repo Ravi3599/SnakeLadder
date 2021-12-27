@@ -63,7 +63,7 @@ b:		while(condition2 == 1 && positionPlayer2 < 100){
            	 	case NO_PLAY:
 				 System.out.println("NO PLAY");
                  		 System.out.println("New Position is: " + position2);
-                 		 cntForNoPlay++;
+                 		 cntForNoPlay2++;
                  	 break;
            		 case LADDER:
 				  System.out.println("Got LADDER");
@@ -74,7 +74,7 @@ b:		while(condition2 == 1 && positionPlayer2 < 100){
 				  position2 = position2 - roll1;
 				  System.out.println("Remains at same position: " + position2);
 				  }
-				  cntForLadder++;
+				  cntForLadder2++;
 				  continue b;
            		 case SNAKE:
 				  System.out.println("Got SNAKE");
@@ -86,7 +86,7 @@ b:		while(condition2 == 1 && positionPlayer2 < 100){
 				  position2 = 0;
 				  System.out.println("New Position is: " + position2);
 				  }
-				  cntForSnake++;
+				  cntForSnake2++;
 				  break;
 			 default:
 				  System.out.println("Default");
